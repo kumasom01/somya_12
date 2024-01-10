@@ -1,0 +1,3526 @@
+const materials=[
+    {materialNumber:100,lotSize:1},
+    {materialNumber:200,lotSize:-1},
+    {materialNumber:130,lotSize:1},
+    {materialNumber:190,lotSize:-1},
+    {materialNumber:112,lotSize:-1},
+    ];
+        const output=materials.filter(materials=>materials.lotSize=== -1);
+        for(let i=0;i<output.length;i++){
+        print(output[i].materialNumber);
+    }
+
+
+
+
+1.added operation selection dropdown in change production UI5 screen.
+2.Checking the MDO table availability in DMci for SFc report
+3. yesterday, Demo completed on labour tracking functionality.
+4.  Working on custom development for activity confirmation, need to create custom iflow
+5.EHP08 - Business is activated into SB2 system and I am working on EcC configuration with ECC system
+Activity Confirmation is getting failed into Prod system - We have raised the ticket and today we have 
+a call with SAP team to discuss on it
+
+1)We have done development for setup activity and We are Doing end to end testing 
+2)We showed a custom standard value key report to Business. 
+They asked to add start date and end date coloumns. So, We are working on it
+
+26 july
+
+1)We are Working on DMCi report
+2) And Working on plant (pco) connectivity with DMc
+3)BAPI testing is going on for create Quality Management Notification.
+4)We have installed Trust certificate In Plant connectivity to DMC
+5)We are setting up new plant into DMC QA and monitoring master data pushed from ECC
+
+
+25-july
+0575
+classification failed(coming manage material)
+
+1)10184223
+
+0595(Material failed and coming manaterial material)
+TCTD0068
+
+0003(Material failed and coming manaterial material))
+H079141192
+H046148100D80
+
+
+18-July
+
+1)We are Going through the Pco connectivity user document
+2)EHP08 - We are doing Testing change production functionality into DMC QA with PP4 EHP08 system
+
+
+12 july
+
+1)We are Deploying CHange Production function in Production syste,
+2)We have Created change request for the same
+3)We are Exploring the Manage Alert app
+4)We have Worked and Identified the cause of time record being not pushed to ecc in production.
+5)EHP08 - We are working on DV4 connectivity with DMC sandbox and PP4 ERP system connectivity with DMC QA.
+
+We have started new plant configuration on DMC QA
+
+
+6-July-2023
+
+1)today we have change production demo with plant supervisors
+ 2) We have Made modification as per the SAP Suggestion on Standard Labor Functionality.
+3) We are Working on creating UAT document  and  cutover list for out box labor functionality deployment.
+4) We are Working on to modify  the user manual and technical document for  out box labor functionality.
+5)EHP08 - we have started configuration for DV4 and PP4 ERP system
+
+
+
+03-july
+
+1)We are Working on the change for standard labour functionality.
+
+30 JUNE
+
+1)We are testing the update operation API through postman
+2)We are Working on the change for standard labour functionality after call with sap yesterday
+
+3)DMC solution will be provided to 2 new plant hence we have started the configuration into QA system
+
+28-june
+
+
+1)Change Production demo has completed
+
+2)We are working on auto clear reservation issue
+3)We have fixed the next number extension issue in  DMC Sandbox
+4)We are Testing the labor standard functionality
+
+ 
+
+has context menu
+Compose
+
+
+22 june
+
+1)user manual for change production is in progress
+2)We are  Creating the technical documentation for production processes.
+3). Today we will create two new plants in the DMC test environment
+4)EHP08 - Standard key value is not getting downloaded into Sandbox DMC, 
+So,CPI team checking with SAP as function module does not exist in SB2 (EHp08).
+
+We got approval to activate business function, We are working on configurations
+
+
+
+
+14 june
+
+1) we are Creating documentation for Change production
+2)We are waiting for custom iflow for activity confirmation from CPI team
+3)We have Created the schema for activity confirmation iflow in DMC
+4) We have Changed the logic in new Setup end process i.e. if another user is doing setup on same sfc 
+then don't signoff the sfc on setup end click button.
+5)following up with the OSS ticket.
+
+6)EHP08 - Currently work center is not trigger from ERP to DMC.We are  checking with CPI team
+
+Failing Activity Confirmation Happened - We are taking help from SAP team to expedite the solution.
+
+
+23 june
+
+1)User manual document has completed.
+2)EHP08 - Standard key value is not getting downloaded into Sandbox DMc As per SAP team suggestion,
+and  CPI team is working on note implementation a
+
+We got approval to activate business function, We are working on configurations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+8-june
+
+1)Working SFC report in DMCi
+2)
+4)EHP08 - 80% configuration changes are done. Today I will connect with CPI and ERP team for further changes
+
+for Failing Activity Confirmation issue - she is following up with SAP team.
+
+
+
+
+1)If sfc is in queue/new status then change it to active status else do nothing. 
+
+9-june
+
+
+ 1)We are Exploring the 2305 release
+2) following up with CPI team for custom development for activity confirmation.
+EHP08 setup is going on
+
+
+12JUNE
+
+1)We are Exploring the 2305 release
+and following up with CPI team for custom development for activity confirmation.
+In production , setup process is sometime giving infinity error. so, we are checking that process failed error.
+
+EHP08 - Configuration is almost completed, only few points need to be done, once we pull order, workcenter from ERP will do testing into DMC. 
+
+Failing Activity Confirmation issue happen. So, we are following up with SAP team.
+
+
+We are Checking the process failed  with infinity error.
+
+
+15 june
+
+1)We are creating documentation for change production.
+2)We are waiting  for custom iflow for activity confirmation from CPI team
+
+3) And Checking the felix's DMCi access issue
+4)coming to EHP08 - Currently work center is not trigger from ERP to DMC.So, we are checking with CPI team
+
+
+
+
+16-june
+
+1)We are Adding comments section in CHange production functionality
+2)We are doing Testing for Change production functionality with Operator role
+3) We have Created Web server and service registry for the CPI iflow for activity confirmation.
+4)CPI team provided the iflow but its have some issue , they are checking on it.
+5)We have Created one OSS ticket regarding labor record not posting to ecc while created manually in
+ Manage time tracking application.
+6)We are Working on a Report to show the estimated time to complete the order.
+7)EHP08 - workcenter and material is not pulling into SB2.We have raised OSS ticket.
+
+
+{
+  "content": [
+    {
+      "plant": "3598",
+      "material": "10005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:22:58.755Z",
+      "modifiedDateTime": "2023-05-26T10:01:08.921Z"
+    },
+    {
+      "plant": "3598",
+      "material": "T123313209_THREADE",
+      "description": "4.5\" MULTISENSE CHASSIS",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "GENERAL",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "assemblyDataType": {
+        "dataType": "SFC",
+        "description": "SFC Only",
+        "category": "ASSEMBLY",
+        "dataFieldList": [
+          {
+            "dataField": {
+              "fieldName": "SFC",
+              "fieldLabel": "SFC",
+              "description": "SFC",
+              "type": "TEXT",
+              "dataFieldOptions": [],
+              "status": ""
+            },
+            "sequence": 10,
+            "required": false
+          }
+        ]
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "4.5\" MULTISENSE CHASSIS"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "M14",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2022-08-05T12:05:45.454Z",
+      "modifiedDateTime": "2023-04-24T13:54:49.706Z"
+    },
+    {
+      "plant": "3598",
+      "material": "LF05000014",
+      "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "SA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "SA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "002",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:15:50.095Z",
+      "modifiedDateTime": "2023-04-05T07:15:50.111Z"
+    },
+    {
+      "plant": "3598",
+      "material": "10364113",
+      "description": "BANDG/STRAPG",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "BK",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "BK",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "BANDG/STRAPG"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-29T11:01:32.307Z",
+      "modifiedDateTime": "2023-04-29T11:12:12.464Z"
+    },
+    {
+      "plant": "3598",
+      "material": "AAAA",
+      "description": "ddddddddddd",
+      "version": "222",
+      "isCurrentVersion": true,
+      "materialType": "PACKAGING",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "GC",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "routing": {
+        "plant": "3598",
+        "routing": "ATP_TEST",
+        "routingType": "PRODUCTION",
+        "version": "A"
+      },
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "ddddddddddd"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-24T13:56:01.945Z",
+      "modifiedDateTime": "2023-04-24T14:00:46.216Z"
+    },
+    {
+      "plant": "3598",
+      "material": "NULL_ECC",
+      "description": "NULL_ECC",
+      "version": "A",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "NULL_ECC"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-05-22T09:14:32.982Z",
+      "modifiedDateTime": "2023-05-22T09:15:27.995Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:19:55.371Z",
+      "modifiedDateTime": "2023-06-09T09:54:14.803Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010620547",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T10:14:37.015Z",
+      "modifiedDateTime": "2023-06-09T10:14:37.025Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0655900",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:12:05.581Z",
+      "modifiedDateTime": "2023-06-13T10:52:08.559Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H307270016",
+      "description": "SSNS SUBSEA ELCTNC BOARD, FMC",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "SSNS SUBSEA ELCTNC BOARD, FMC"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "003",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-13T10:56:33.03Z",
+      "modifiedDateTime": "2023-06-13T10:56:33.038Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0732200",
+      "description": "PCB",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "PCB"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-15T09:53:26.196Z",
+      "modifiedDateTime": "2023-06-15T09:53:26.21Z"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "empty": true,
+      "unsorted": true
+    },
+    "pageSize": 20,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 11,
+  "last": true,
+  "number": 0,
+  "size": 20,
+  "numberOfElements": 11,
+  "sort": {
+    "sorted": false,
+    "empty": true,
+    "unsorted": true
+  },
+  "first": true,
+  "empty": false
+}{
+  "content": [
+    {
+      "plant": "3598",
+      "material": "10005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:22:58.755Z",
+      "modifiedDateTime": "2023-05-26T10:01:08.921Z"
+    },
+    {
+      "plant": "3598",
+      "material": "T123313209_THREADE",
+      "description": "4.5\" MULTISENSE CHASSIS",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "GENERAL",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "assemblyDataType": {
+        "dataType": "SFC",
+        "description": "SFC Only",
+        "category": "ASSEMBLY",
+        "dataFieldList": [
+          {
+            "dataField": {
+              "fieldName": "SFC",
+              "fieldLabel": "SFC",
+              "description": "SFC",
+              "type": "TEXT",
+              "dataFieldOptions": [],
+              "status": ""
+            },
+            "sequence": 10,
+            "required": false
+          }
+        ]
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "4.5\" MULTISENSE CHASSIS"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "M14",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2022-08-05T12:05:45.454Z",
+      "modifiedDateTime": "2023-04-24T13:54:49.706Z"
+    },
+    {
+      "plant": "3598",
+      "material": "LF05000014",
+      "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "SA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "SA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "002",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:15:50.095Z",
+      "modifiedDateTime": "2023-04-05T07:15:50.111Z"
+    },
+    {
+      "plant": "3598",
+      "material": "10364113",
+      "description": "BANDG/STRAPG",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "BK",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "BK",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "BANDG/STRAPG"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-29T11:01:32.307Z",
+      "modifiedDateTime": "2023-04-29T11:12:12.464Z"
+    },
+    {
+      "plant": "3598",
+      "material": "AAAA",
+      "description": "ddddddddddd",
+      "version": "222",
+      "isCurrentVersion": true,
+      "materialType": "PACKAGING",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "GC",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "routing": {
+        "plant": "3598",
+        "routing": "ATP_TEST",
+        "routingType": "PRODUCTION",
+        "version": "A"
+      },
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "ddddddddddd"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-24T13:56:01.945Z",
+      "modifiedDateTime": "2023-04-24T14:00:46.216Z"
+    },
+    {
+      "plant": "3598",
+      "material": "NULL_ECC",
+      "description": "NULL_ECC",
+      "version": "A",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "NULL_ECC"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-05-22T09:14:32.982Z",
+      "modifiedDateTime": "2023-05-22T09:15:27.995Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:19:55.371Z",
+      "modifiedDateTime": "2023-06-09T09:54:14.803Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010620547",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T10:14:37.015Z",
+      "modifiedDateTime": "2023-06-09T10:14:37.025Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0655900",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:12:05.581Z",
+      "modifiedDateTime": "2023-06-13T10:52:08.559Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H307270016",
+      "description": "SSNS SUBSEA ELCTNC BOARD, FMC",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "SSNS SUBSEA ELCTNC BOARD, FMC"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "003",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-13T10:56:33.03Z",
+      "modifiedDateTime": "2023-06-13T10:56:33.038Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0732200",
+      "description": "PCB",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "PCB"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-15T09:53:26.196Z",
+      "modifiedDateTime": "2023-06-15T09:53:26.21Z"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "empty": true,
+      "unsorted": true
+    },
+    "pageSize": 20,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 11,
+  "last": true,
+  "number": 0,
+  "size": 20,
+  "numberOfElements": 11,
+  "sort": {
+    "sorted": false,
+    "empty": true,
+    "unsorted": true
+  },
+  "first": true,
+  "empty": false
+}
+{
+  "content": [
+    {
+      "plant": "3598",
+      "material": "10005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:22:58.755Z",
+      "modifiedDateTime": "2023-05-26T10:01:08.921Z"
+    },
+    {
+      "plant": "3598",
+      "material": "T123313209_THREADE",
+      "description": "4.5\" MULTISENSE CHASSIS",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "GENERAL",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "assemblyDataType": {
+        "dataType": "SFC",
+        "description": "SFC Only",
+        "category": "ASSEMBLY",
+        "dataFieldList": [
+          {
+            "dataField": {
+              "fieldName": "SFC",
+              "fieldLabel": "SFC",
+              "description": "SFC",
+              "type": "TEXT",
+              "dataFieldOptions": [],
+              "status": ""
+            },
+            "sequence": 10,
+            "required": false
+          }
+        ]
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "4.5\" MULTISENSE CHASSIS"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "M14",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2022-08-05T12:05:45.454Z",
+      "modifiedDateTime": "2023-04-24T13:54:49.706Z"
+    },
+    {
+      "plant": "3598",
+      "material": "LF05000014",
+      "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "SA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "SA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "002",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:15:50.095Z",
+      "modifiedDateTime": "2023-04-05T07:15:50.111Z"
+    },
+    {
+      "plant": "3598",
+      "material": "10364113",
+      "description": "BANDG/STRAPG",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "BK",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "BK",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "BANDG/STRAPG"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-29T11:01:32.307Z",
+      "modifiedDateTime": "2023-04-29T11:12:12.464Z"
+    },
+    {
+      "plant": "3598",
+      "material": "AAAA",
+      "description": "ddddddddddd",
+      "version": "222",
+      "isCurrentVersion": true,
+      "materialType": "PACKAGING",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "GC",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "routing": {
+        "plant": "3598",
+        "routing": "ATP_TEST",
+        "routingType": "PRODUCTION",
+        "version": "A"
+      },
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "ddddddddddd"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-24T13:56:01.945Z",
+      "modifiedDateTime": "2023-04-24T14:00:46.216Z"
+    },
+    {
+      "plant": "3598",
+      "material": "NULL_ECC",
+      "description": "NULL_ECC",
+      "version": "A",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "NULL_ECC"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-05-22T09:14:32.982Z",
+      "modifiedDateTime": "2023-05-22T09:15:27.995Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:19:55.371Z",
+      "modifiedDateTime": "2023-06-09T09:54:14.803Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010620547",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T10:14:37.015Z",
+      "modifiedDateTime": "2023-06-09T10:14:37.025Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0655900",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:12:05.581Z",
+      "modifiedDateTime": "2023-06-13T10:52:08.559Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H307270016",
+      "description": "SSNS SUBSEA ELCTNC BOARD, FMC",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "SSNS SUBSEA ELCTNC BOARD, FMC"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "003",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-13T10:56:33.03Z",
+      "modifiedDateTime": "2023-06-13T10:56:33.038Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0732200",
+      "description": "PCB",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "PCB"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-15T09:53:26.196Z",
+      "modifiedDateTime": "2023-06-15T09:53:26.21Z"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "empty": true,
+      "unsorted": true
+    },
+    "pageSize": 20,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 11,
+  "last": true,
+  "number": 0,
+  "size": 20,
+  "numberOfElements": 11,
+  "sort": {
+    "sorted": false,
+    "empty": true,
+    "unsorted": true
+  },
+  "first": true,
+  "empty": false
+}
+
+
+{
+  "content": [
+    {
+      "plant": "3598",
+      "material": "10005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:22:58.755Z",
+      "modifiedDateTime": "2023-05-26T10:01:08.921Z"
+    },
+    {
+      "plant": "3598",
+      "material": "T123313209_THREADE",
+      "description": "4.5\" MULTISENSE CHASSIS",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "GENERAL",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "assemblyDataType": {
+        "dataType": "SFC",
+        "description": "SFC Only",
+        "category": "ASSEMBLY",
+        "dataFieldList": [
+          {
+            "dataField": {
+              "fieldName": "SFC",
+              "fieldLabel": "SFC",
+              "description": "SFC",
+              "type": "TEXT",
+              "dataFieldOptions": [],
+              "status": ""
+            },
+            "sequence": 10,
+            "required": false
+          }
+        ]
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "4.5\" MULTISENSE CHASSIS"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "M14",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2022-08-05T12:05:45.454Z",
+      "modifiedDateTime": "2023-04-24T13:54:49.706Z"
+    },
+    {
+      "plant": "3598",
+      "material": "LF05000014",
+      "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "SA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "SA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "FW-14 DIATOMACEOUS EARTH- 50 LB SACK"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "002",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-05T07:15:50.095Z",
+      "modifiedDateTime": "2023-04-05T07:15:50.111Z"
+    },
+    {
+      "plant": "3598",
+      "material": "10364113",
+      "description": "BANDG/STRAPG",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "BK",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "BK",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "BANDG/STRAPG"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-29T11:01:32.307Z",
+      "modifiedDateTime": "2023-04-29T11:12:12.464Z"
+    },
+    {
+      "plant": "3598",
+      "material": "AAAA",
+      "description": "ddddddddddd",
+      "version": "222",
+      "isCurrentVersion": true,
+      "materialType": "PACKAGING",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "GC",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "bom": {
+        "bom": "ATP_MAT",
+        "version": "A",
+        "bomType": "USERBOM",
+        "plant": "3598"
+      },
+      "routing": {
+        "plant": "3598",
+        "routing": "ATP_TEST",
+        "routingType": "PRODUCTION",
+        "version": "A"
+      },
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "ddddddddddd"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-04-24T13:56:01.945Z",
+      "modifiedDateTime": "2023-04-24T14:00:46.216Z"
+    },
+    {
+      "plant": "3598",
+      "material": "NULL_ECC",
+      "description": "NULL_ECC",
+      "version": "A",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [],
+      "unitsOfMeasureEans": [],
+      "lotSize": -1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "NULL_ECC"
+        }
+      ],
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ME",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-05-22T09:14:32.982Z",
+      "modifiedDateTime": "2023-05-22T09:15:27.995Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010005661",
+      "description": "OBS RFF ECN Y801-17",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "OBS RFF ECN Y801-17"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:19:55.371Z",
+      "modifiedDateTime": "2023-06-09T09:54:14.803Z"
+    },
+    {
+      "plant": "3598",
+      "material": "000000000010620547",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T10:14:37.015Z",
+      "modifiedDateTime": "2023-06-09T10:14:37.025Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0655900",
+      "description": "MNDRL BDY BMS-S210",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "MNDRL BDY BMS-S210"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-09T09:12:05.581Z",
+      "modifiedDateTime": "2023-06-13T10:52:08.559Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H307270016",
+      "description": "SSNS SUBSEA ELCTNC BOARD, FMC",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "MANUFACTURED_PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "putawayStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "SSNS SUBSEA ELCTNC BOARD, FMC"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "003",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-13T10:56:33.03Z",
+      "modifiedDateTime": "2023-06-13T10:56:33.038Z"
+    },
+    {
+      "plant": "3598",
+      "material": "H0J0732200",
+      "description": "PCB",
+      "version": "ERP001",
+      "isCurrentVersion": true,
+      "materialType": "CUSTOM",
+      "procurementType": "PURCHASED",
+      "status": "RELEASABLE",
+      "unitOfMeasure": "EA",
+      "alternateUnitsOfMeasure": [
+        {
+          "uom": "EA",
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "uom": "ZPL",
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "unitsOfMeasureEans": [],
+      "lotSize": 1,
+      "assemblyDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "removalComponentDataType": {
+        "dataType": "NONE",
+        "description": "None",
+        "category": "ASSEMBLY",
+        "dataFieldList": []
+      },
+      "customValues": [],
+      "productionStorageLocation": "0001",
+      "descriptions": [
+        {
+          "locale": "en",
+          "description": "PCB"
+        }
+      ],
+      "maxShelfLife": 0,
+      "maxShelfLifeUnits": "DAYS",
+      "mrpController": "001",
+      "isAutocompleteAndConfirmed": true,
+      "origin": "ERP",
+      "orderProcessingMode": "DEFAULT",
+      "materialGroups": [],
+      "createdDateTime": "2023-06-15T09:53:26.196Z",
+      "modifiedDateTime": "2023-06-15T09:53:26.21Z"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "empty": true,
+      "unsorted": true
+    },
+    "pageSize": 20,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 11,
+  "last": true,
+  "number": 0,
+  "size": 20,
+  "numberOfElements": 11,
+  "sort": {
+    "sorted": false,
+    "empty": true,
+    "unsorted": true
+  },
+  "first": true,
+  "empty": false
+}javascript:void(0)
+
+
+javascript:void(0)
+
+var input=$input.InputSFC
+var code=input.code;
+//$output.Status=code
+'
+if(code=='401'|| code=='402'){
+$output.status=true;
+}
+else{
+$output.status=false;
+
+Why used condition icon after script task?
+
+condition-->
+1)'ScriptTask#Status'==true
+2)'ScriptTask#Status'==false
+
+
+1)'ScriptTask#Status'==false
+
+
+2) 'ScriptTask#Status'==false
+
+in script Task-- Input--> structure  Schema--Why selected SFCStatus ,
+ why not selected SFC done status
+and output--> String
+
+
+26 june
+
+1) We are Working on Technical documentation for production Processes
+2)EHP08 - We have raised OSS ticket as order is not getting release into DMC sandbox 
+
+
+27 june
+
+1)demo has been scheduled with Chris and Felix for Change production functionality
+2)We have Completed the Technical documentation for production Processes
+3)We ae Checking the next number extension issue in  DMC Sandbox 
+4)Coming to EHP08 - We have started BH operator testing into Sandbox system
+
+29 june
+
+1)We have Modified the yield confirmation xslt and fixed the open reservation clear issue. 
+Today we will show this to Chris and Felix.
+2)We are Checking the Header Long text field in  EHP08
+
+4-APRIL
+
+1)We have moved yield confirmation xslt to PROD system
+
+2)we are configuring 2 new plants into dmc qa
+3)We are Testing the standard labor functinality
+
+
+5-July
+
+1)We are doing testing operation for get detail API.
+2)We are Testing the standard labor functinality
+
+
+
+7-July
+1)We have completed Change production Demo with Plant supervisors.
+2)We are Working on creating UAT document and cutover list for out box labor functionality deployment.
+3)We are Working on modifying the user manual and technical document for out box labor functionality.
+4)EHP08 - We have started configuring PP4 system to DMC QA and will do further testing
+          We are doing testing for new plants into DMC QA system
+
+
+10 july
+
+1)Today, We have Moved out of box labor functionality to production.
+2)We are Creating process flow diagram for Plant maintenance and Quality maintenance notification
+3)We are Creating cutover details for change production devlopment
+4)EHP08 - We will start testing for DV4 with DMC sandbox 
+We have started new plant configuration on DMC QA
+
+
+11 July
+
+1)We are Creating process flow diagram for Plant maintenance and Quality maintenance notification.
+2)Exploring the Manage Alert app
+3)EHP08 - We will start testing for DV4 with DMC sandbox 
+We have started new plant configuration on DMC QA
+
+
+13 july
+
+1)We have Implemented Change production functionality in DMC prod
+
+2)We are Creating a Process flow for Scheduled maintenance and Unscheduled maintenance.
+3)We are Exploring new alert functionality 
+
+4)We are Working on to setup the GitHub repository for DMC project.
+
+
+
+14 july
+
+1)We have Competed this document on how to create a GitHub repository for DMC project .
+
+1)EHP08 - We have started testing for PP4(EHP08) into DMC QA and preparing testing document. 
+
+
+19 july
+
+1)We are exploring Quality maintenance notification in DMc
+2)working on documentation for github account for DMC project.
+3)Notification is not triggering So, we have Created an OSS ticket for raise alert functionality. 
+4)New plant configuration - Currently we are clearing out all workcenter and resources 
+which pushed from PP2 (ehp05) into DMC
+
+ 20-july
+
+1)We are Working on Quality notification to create BAPI
+2)We are working on documentation for github account for DMC project.
+3)and Working on deleting wc and resources
+3)Currently we are clearing out all workcenter and resources which pushed from PP2 (ehp05) into DMC
+
+
+21-JULY
+1)We are Testing Quality Management BAPIs with functional team
+@)We have started end to end testing for PP4(EHP08) and preparing testing document
+
+
+1)We are testing Quality Management  notification for create BAPI with functional team
+2)We have started new plant configuration into DMC QA
+
+
+
+
+ZRS:AMO:PM:WC_MNT	
+ZRS:IT:ABP:ABAP_EDITOR	
+ZRS:IT:ABP:ABAP_EDITOR
+ZRS:IT:ABP:ABAP_EDITOR
+ZRS:IT:ALE:IDOC_ADM	
+ZRS:IT:ALE:IDOC_ADM	
+ZRS:IT:ALE:IDOC_ADM
+ZRS:AMO:PM:WC_MNT	
+ZRS:IT:BAS:RFC_MNT
+ZRS:IT:BAS:RFC_MNT	
+ZRS:IT:BAS:RFC_MNT	
+ZRS:IT:BAS:SAP_CNCT
+
+
+
+385427- 0595 classification
+53032- 0595 Material
+
+Failed Material for 0595
+!)TISO 40-1.500
+2)TCTD0068- come on manage material
+3)TBTD3429-1/2
+4)T56738-80013/M
+5)T#1MXL6118HDY
+
+
+
+0003 failed 
+manage material available
+HT03063960- 
+H079141192
+H046148100D80
+LMY51049A100D4
+L250V90
+H_REPLENISH
+
+
+
+Plant 0003 10 july
+Material download
+TCTD0068
+
+
+25 july
+
+1) We are Going through the Plant connectivity document
+2)We are Following up with the Alert OSS ticket.
+3)We are Exploring Plant connectivity with  DMC
+
+25-july
+0003 plant classification failed coming inside manage matrial
+H093260371
+
+
+26 July
+
+1)We are Working on DMCi report
+2)Call has been scheduled with Business team for Quality Management notification discussion
+3)We are setting up new plant into DMC QA and monitoring master data pushed from ECC
+
+
+31-july
+
+1)We are exploring and checking 2308 DMC release
+2)Today we have a call with QM team and Business team for generate QM notification task
+
+
+2-August
+
+1)We are Checking 2308 release functionalities.
+2)We have a call with SAP for raise alert functionality
+3)We are Preparing plant setup manual and EHP08 configuration document
+
+Dispatch and Monitoring dasboard
+
+3-August
+1)We are Going to create SAP OSS ticket for REO functionality bug.
+2)We are going to test order execution end to end scenario for new plant 0965A.
+3)We Had a call with sap on raise alert issue and provided the data like testing with 
+default IDP(identity provider) and jwt(Json Web) token
+4)We are Working on documentation of labor functionality 
+
+
+4-August
+
+1)Cloud connector team connected Pco to Cloud.So,  Now we are connecting PCO from cloud to DMC
+2)We are doing testing for new plant 0965A
+
+7-Aug
+1)We are doing testing 2308 release functionalites and documenting all test scripts
+2)We are doing Regression Testing after 2308 release
+3)We have started to test new DMC release 2308 into DMC QA.
+
+
+8- Aug
+
+1) We will do Regression Testing after 2308 release
+2)We are Unable to find the standard values after 2308 release.So, We have Created a OSS ticket for the issue - 
+3)We have started to test new DMC release 2308 into DMC QA
+4)we are Working with ABAP team for QM notification create through BAPI
+ 
+
+9-Aug
+
+1)today we have call with cloud connector team for Pco connectivity
+2)We will do Regression Testing after 2308 release
+3)We have Raised two oss ticket
+4)We have completed end to end testing for 2308 release
+
+10 Aug
+
+1)We are Working on customized UI report for standard value key comparison
+
+2)We are Testing the API for create simateonusly group routing
+3)We do Regression Testing after 2308 release and following up with the oss ticket 
+4)WE have raised the ticket for Work center is failing to download into DMC for plant 0595
+
+
+14 Aug
+
+1)We are Creating OSS ticket for "standard key value is not displaying for new routing"
+2)We are Working on seconds to hours issue for labour time tracking.
+3)We are Working on site to site functionality where DMC process 2 plants data 
+
+16 August
+1)We are working on DMC to cloud connector connection
+2)We are Working on seconds to hours issue for labour time tracking.
+3) We have started end to end testing for 2 plant mapping 
+4)As SAP has fixed classification download issue so we are checking it with ECC and CPI teams
+
+17-Aug
+
+1)We have started configuration of new plant 0187 into DMC QA
+2)We are exploring site to site functionality for 0965A plant into DMC QA
+3)We are Working on seconds to hours issue for labour time tracking 
+4)We are doing testing for Pco connectivity from Cloud connector
+5)and doing Testing update routing API for simultaenous group type
+
+21-August
+1)We have Moved the order confirmation XSLT changes regarding the seconds to hours issue to production environment today.
+2)We are Installing Production connector in remote server
+ 
+23-Aug
+1)We  have explored the manage PODs users and launch PODs app in DM
+2)We have Created a git repository for xslt changes.
+3)We have Created OSS ticket for approve api failed issue
+4)and Testing going on for site -to -site plant 0956A
+
+5) We are working on update simultaneous routing group using node-js
+
+
+25-Aug
+
+1)We are doing Testing simultaneous group routing scenarios
+2)Regression testing of 2308 release going on
+
+3)We  have Started  configuring the new alert service functionality in DMC
+
+4)We are Doing custom development for data collection 
+
+
+
+Snehal ma'am is not approving my roaster shift attendance of july month. I remember her many times.
+but she is ignoring this. 
+please help me.
+
+1)We are working on Standard value hour report
+
+
+1)why we need to merge SFC ?
+To reduce number of SFC
+2)Why u go through BH operator POD?
+Ans- because in merge SFC POD, Same operation activity SFC only able to merge. So, first I go through
+
+
+31-August  2023
+
+1)Testing is going on. We have Completed Standard value key development. 
+
+2)We are Checking how SFC number is generating for split SfC functionality
+
+3)As a part of SME training is planned in next week for new plant setup, 
+hence, We are  working on regression testing for all new plant into DMC QA
+
+
+1-sept
+1)We are Working on custom development for data collection And reviewing the manual document 
+2)We are listing down all incoming and outgoing workflows
+
+4 -sept
+
+1)DMC is not accepting special characters material.. So , We are handling special characters material
+ xslt to reach DMc.
+
+2)We have almost completed regression testing for all new plants into DMC test.
+
+5 Sept
+
+1)DMC is not accepting special characters material.. So , We are handling special characters material
+ xslt to reach DMc.
+2)We have completed regression testing for SME training which is planned from today for 5 new plants
+
+
+6 sept
+1)SME training started from yesterday. 
+and we are doing end to end  testing for one order into DMC QA for all the new plants
+
+2)We have completed handling special characters in Matmas
+
+3)We are Working handling special characters in loipro
+
+
+8Sept
+
+1)We are changing resume operation dropdown to text field in change production screen
+2)We are Preparing the PPT on how to create a dashboard in DMCi
+3)Order is not completing even after all operations are completed due 
+to deliver qty is not reach to maximum deliver quantity - We are investigating more on it.
+
+12- Sept
+
+1) We are working on xslt changes for serialized material.
+2)We have created PPD to accommodate the  start sfc and start activity api
+3) for next go live plant ,We are Working in cutover list for Emmott plant 
+
+
+13-Sept
+
+1)We are working on handling special characters in loipro and production confirmation xslt
+2)We are Working on modifying the logic for setup time activity
+3)Order is not completing into DMC for fraction quantity. We are investigating more on it.
+
+18-Sept
+
+1)We are doing Testing relaxed flow functionality in routing
+
+20-Sept
+
+1)LIOPRO05 xslt change for Auto release order in sandbox 
+2)We are Working on nodejs application for setup activity confirmation
+3)We are exploring on certification association with Material scenario 
+
+
+1)We are Working on nodejs application for setup activity confirmation
+
+2)We are Exploring how to stop sending user name to ECC  For Machine time capture 
+
+3)We are Creating document for auto order release
+
+4)We are Adding filter for username in standard value key report.
+
+5)Today we have a call with SAP for relax flow routing functionality
+
+
+
+28-Sept
+1)We are Working on ppd for setup activity time
+
+2) We are Modifying the technical document to add new XSLT changes after SME training.
+
+3) We are adding new sfc release slide in supervisor manual ppt.
+
+
+29-Sept
+
+1)unholding point name and field name is not coming inside  segment of IDOC in ECC and nor come in DMC. 
+So, we are working with SAP ECC team
+2)Working on setup new plant into DMC Prod
+3)We are Working on Mange order manual ppt for adding new slides for sfc release.
+4)operator is not able to release the order .WE are working on P1 ticket -
+
+
+3-oct
+1)WE are Working on new plant setup into DMC Production
+2)We are doing Testing of PPD for setup activity time.
+
+Today, I have created standard value key pod in 0003 plant same like 3598
+
+ and I tested API and checked then I got material was not coming.
+
+
+4-oct
+1)We are doing Testing Operation schedule change BAPI in ECC
+2) We have completed basic DM setup for new plant into DM Prod.
+   Business has started to push master data and currently we are monitoring the master data like Material Download.
+
+
+5 -oct
+
+1)Business starts to push master data, we are monitoring and found UOM are not available hence we are adding UOM into DM Prod. 
+
+2) We are working on User upload into DM prod system for new plant
+3)Swanand provided one test order to check why Labor Hrs was not posted in ECC. So we are checking on it
+4)We are Moving new setup time PPD to prod environment.
+5)We are creating SAP ticket for  order complete workflow that didn't triggered on sfc complete issue
+
+
+
+06-Oct
+
+1)yesterday, We have Received new requirement from Swanand for Change routing. Today we will start the devlopment.
+2)We are Modifying MATMAS xslt for UOM ISO code issue
+3)Regarding New plant setup into DM Prod system, 
+4)Yesterday,We have added all supervisor users
+5)and We discussed UOM issue with SAP team and we raised ticket to SAP team for the investigation.
+6)Today,We are going to add all operator users.
+
+9-Oct
+1)We are handling logic for adding multiple SFC number in change production functionality.
+2)Material Loading is completed into DM Prod for new plant .So,We are monitoring failed materials
+ and working on UOM issue
+
+
+
+10-oct
+
+
+1)We are Adding logic to ignore ZDMC control key operations in DMC from ECC
+2)We are handling logic for adding multiple SFC number in change production functionality-Inprogress
+3)UOM issue is fixed hence materials are downloaded successfully into DM prod.
+4)We are working on MATMAS xslt wrt UOM, lot size and language code functionality.
+
+Question
+a)ECC System is software which is server based.
+b)DMC is nothing but MES System only, it is cloud based. 
+c)MATMAS IDOC is used for sending material from ECC to DMC
+d)SFC- SHOP FLOOR CONTROL- is an unique identifier used to track a material throughout production.
+e)XSLT-Extensible Stylesheet Language Transformation (XSLT)-used for XML data transformations.
+f)Unit of measure (UoM) specifies the standard measurement unit that is used to count items  Pieces, feet, pounds, 
+and gallons are all examples of units of measure.
+g)Lot size- how much quantity you need to produced against material.LOT Size will depend on SFC
+h)Change Production - if u add any new operation it will not reflect in DMC if sfc was released against the order
+so we are using change production.
+
+11-Oct
+
+1)We have Changed the PPD with start plugin on each start button on the operator pod for 0003, 3598, 0575 plant 
+in DMC test environment.
+2)We have added changes into MATMAS xslt for serialize material into DM test environment 
+3)We are doing end to end testing for order execution
+4)We are doing testing change production functionality with multiple SFCs
+5)We have completed ignoring zdmc operations in DMC
+
+Ques
+c)MATMAS IDOC is used for sending material from ECC to DMC
+e)XSLT-Extensible Stylesheet Language Transformation (XSLT)-used for XML data transformations.
+
+
+12-OCt
+1)We have Completed Change production testing and showed a demo to Business and got approval for prod movement
+2)We are Working on creating the Utility for uploading users for work center assignment.
+3)Work centre loading is started for new plant into DM prod.We are monitoring on it
+
+
+
+
+ We have Deployed SFC report, SVK report and Change production in DMC prod
+17-oct-2023
+
+1)We have Created ticket for Approve api error
+2)We are Monitoring DMC production env after go Live
+
+
+19-oct
+1)
+
+1)after go-live , We are Monitoring the production environment And Resolving the issues
+
+20 oct
+1)We are Monitoring DMC prod PPD logs.
+2)We are monitoring production env after go live and note down new failed messages into the tracker
+3)We will start to explore manage logistics order
+
+26-Oct
+
+1)We are Monitoring DM prod messages after new plant golive.
+2)We are Working with CPI team for custom yield functionality
+
+30-oct
+1)CPI team completed custom yield development in CPI side.
+ Now In DMC we are creating web server, service registry and schema for that development
+
+in standard yield confirmation, User ID is not passing to ECC from DMC
+So we are calling custom yield confirmtion
+CPI-Cloud Platform Integration- It is used to integrate between ECC to DMC.
+
+ 
+
+Service Registry-can register your own API services or extensions
+ in SAP Digital Manufacturing using the Manage Service Registry app.
+
+Web server-if u want to connect external system to DMC.first u have to create web server in Webserver
+ u have enter external system URL and call type REST or POST
+
+31-oct
+
+1)For Custom yield confirmation, We have  Created webserver. Now creating schema for the yield confirmation
+2)We have added the order quantity column into operator POD into the sandbox environment.
+3)We are exploring how to track user details and worked order qty using data collection 
+----------------------------------------------------------------------------------------------------------
+Schema--> is nothing but input payload structure
+
+Web server-if u want to connect external system to DMC.first u have to create web server in Webserver
+ u have enter external system URL and call type REST or POST
+
+in standard yield confirmation, User ID is not passing to ECC from DMC
+So we are calling custom yield confirmtion
+
+POD(production operator dashboard)-
+ It will allow to operation activity like starting the operation, completing operation, assembling component.
+
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+
+
+1-oct
+
+1)We have completed custom yield development. Testing is in progress.
+2)Yesterday we had a demo with business on logistics order execution.
+
+
+2-Oct
+1)We have added the order quantity column into operator POD into the test environment and waiting for 
+UAT approval.
+2)We are exploring how to track user details and order qty using data collection
+3)Today we have custom yield confirmation demo & Discussion with Business
+4)Exploring custom workflow functionality in DMC.
+
+1)User Acceptance Testing (UAT)-users are given the opportunity to interact with the software before its 
+official release(Go-Live) to see if any features have been overlooked or if it contains any bugs
+
+2)Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+
+3)custom workflow functionality- it allows to add new filed with standard workflow
+4)in standard yield confirmation, User ID is not passing to ECC from DMC
+So we are calling custom yield confirmtion
+
+
+03-Nov
+1)yesterday, custom yield demo was cancelled. Because we received one more requirement for 
+custom yield devlopment. The requirement was adding Scrap quantity.
+2)Today, We are Working on data collection export  functionality
+
+Scrap quantity- deleting the material that will not use anymore.
+Example- u manufacturing 10 mobiles.one mobile u found lot design defect. 
+Not meet ur spec.so u r scrapping one mobile.
+
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+
+in standard yield confirmation, User ID is not passing to ECC from DMC
+So we are calling custom yield confirmtion
+
+6-Nov
+
+1)Order final confirmation automatic trigger was not happened in DMC prod. 
+We tried to find a PPD trigger log but log was not shown. Today,We are going to raise high priority ticket to SAP.
+(issue was happend on Friday late nyt).
+
+a)Automatic Trigger-
+if u want to trigger any PPD after event u can use Automatic trigger
+Example
+After order created, if u want to call PPD. u have to use automatic trigger
+order created, Operation created-Event
+
+b)Design Production Process-Pulling data from your backend API.
+
+7-Nov
+
+1)Yesterday we showed auto final confirmation functionality to Business and got a production movement approval.
+Today we created Change Order request for production movement. Vignesh will be deploying functionality 
+in PROD environment at 2 PM IST.
+ 
+2)Yesterday we have created OSS ticket for Automatic trigger  not happen issue.
+3)Snehal is working on how to track user details and worked order qty using data collection
+--------------------------------------------------------------------------------------
+automatic final confirmation- means if the planned quantity is reached, then the system posts automatically give  
+final confirmation and if the planned quantity is not reached, the system posts partial confirmation.
+
+a)Automatic Trigger-
+if u want to trigger any PPD after event u can use Automatic trigger
+Example
+After order created, if u want to call PPD. u have to use automatic trigger
+order created, Operation created-Event
+
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+
+
+8-nov
+
+1)yesterday we have deployed Auto final confirmation in DMC production system 
+and we ensured the functionality is working fine or not.
+2)Yesterday we had a demo  with business on custom data collection plugin
+3)Regression testing going on fOR new DMC release
+
+automatic final confirmation- means if the ORDER quantity is reached, then the system posts automatically give  
+final confirmation and if the ORDER quantity is not reached, the system posts partial confirmation.
+
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+(SAP is still checking on it)
+
+9-nov
+
+1)We are still doing Regression testing for DMC 2311 release
+
+they have added new functionalities in 2311 release
+
+so we are testing our system. Is any existining functionalities got distrubed or not
+
+13-Nov
+
+1)We are Adding SFC report plugin in operator dashboard
+
+ SFC(Shop floor number)-
+
+14-nov
+
+1)Yesterday, We have added SFC report plugin in POD. Today we will show to Demo and get a approval for 
+PROD movement.
+2)Yesterday, Order is failing sometimes in DMC when we have added new BOM components. We are checking the issue.
+3)We have Created two oss tickets yesterday
+4) Demo for data collection export done yesterday
+
+BOM- is a structured list identifying all materials and components required to construct a product,
+SFC Report-can use the SFC Report app to view information about SFCs in production orders and process orders.
+
+
+15-Nov
+
+1)Yesterday, We showed demo of sfc report pluging in POD  to business and got an approval for PROD Movement.
+2)Order is failing when adding new component So, yesterday, Swananad created ticket for this.
+
+POD(production operator dashboard)-
+ It will allow to operation activity like starting the operation, completing operation, assembling component.
+
+16-Nov
+1)Vignesh is Exploring the Quality notification process in DMc
+2)I am Exploring Guided step pod and Guided step production process in DMC.
+
+1)Guided Steps – POD – refers to the Production Order Display. It is a feature that allows users to
+ view detailed information about production orders, including their status, components, operations 
+and other relevant details.
+ Users can navigate through guided steps to efficiently manage and monitor the production process
+
+17 Nov
+
+1)Yesterday , i have created raise alert in plant 3598  and 0003  but when open manage alert app both 
+the alerts are not  showing irrespective of plant selection. So, We are working on this issue.
+2)I am Exploring Guided step production process in DMC.
+3)We are Working on cutover list for new plant DMC setup into Prod
+4)We are Working on validation scenario for custom data collection plugin
+
+20-Nov
+
+1)We had a call with quality management team on Friday. 
+They provided a document to create QM notification. We are checking the document.
+2)Yesterday, We have Added SFC report function in BH POD in Prod System.
+
+21-Nov
+Hello Raju
+
+Yesterday 's Update
+
+1)We have created QM notification using TCODE in ERP
+2)today we are trying to create QM notification using BAPI call.
+
+22-nov
+1)We are Working on a new plant setup into DM prod 
+2)Exploring the new features after 2311 release
+
+
+
+
+1) I created the following Layout pages: Work instructions, Material Consumption, Data Collection, 
+Quantity Confirmation, Electronic Signature and Activity Confirmation in the POD.
+ 
+2)Added plugin container- Guided step- Production process Plugin. and for configuration,Under “Available Actions,” map each 
+“Action” to the respective “Layout Page” in the POD.
+3)I have added Guided step- Production process Plugin in POD  in the icon tab bar
+4)Create one PPD.
+5)Create one new order
+6)Add created PPD in the production process against all operations in the manage routing.then click on save.
+7)Release order in DMC
+
+8) select the WC, SFC and resource in the POD and click on GO button.
+9)Click on continue button of Guided step- Production process Plugin then step by step will perform every opration.
+
+24-oct
+
+1)We are doing Testing custom yield confirmation and creating a document for that
+2)We are Exploring the new features after 2311 release
+
+28 Nov
+
+1)Working on new plant setup into DM prod
+2)Working on validation scenario for data collection into operator POD 
+3)Scrap confirmation is failing in DMC test. So I am working with CPI team.
+
+
+29-nov
+1)Scrap confirmation is failing in DMC test. So CPI team fixed it. 
+2)Yesterday we had a call with SAP for username with yield confirmation enhancement,
+ Vignesh will work with CPI and ABAP team for this enhancement
+
+1)if u found any defect in ur material then u have to do scrap
+
+04-12-2023
+
+1)DMC 2311 release is deployed into Production environment on Saturday.
+2)POD is not refreshing automatically after Signoff. 
+Today Vignesh and Swanand had a call with SAP. Now we are waiting for SAP's reply.
+3)Custom Data Collection plugin is moved to production environment today.
+
+4)We will monitor production system once business hours start today
+
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+(SAP is still checking on it)
+
+5-dec
+
+1)Now POD is refereshing automatically after signoff and working fine in PROD System.
+
+2)Vignesh is working with SAP ABAP team for Quality Mmaintenance notification create 
+and Plant Maintenance notification create enhancement.
+
+6-Dec
+1)Vignesh is Working with CPI ad SAP ABAP team for Quality Mmaintenance(QM) and Plant Maintenance(PM) notification
+ integration
+
+7-Dec
+
+1)SAP ERP team is creating transport request for Plant Maintenance notification. Once they created ABAP team will
+ create a custom BAPI.
+2)Today we have a call with SAP team for SFC status is not changing issue.
+
+  BAPI(Business Application Programming Interface)
+
+BAPI will pull data from ECC to DMC. for example if you need data from ECC to DMC. 
+We can use BAPI it will pull data from ECC to DMC/MII
+
+
+8-dec
+
+1)We are Working on custom data collection validation scenarios into operator POD 
+Manage data collection-- we can collect data for SFC. 
+which data we can collect...(we assign    unique no. for production order in sfc.)
+
+Hello Swanad Sir,
+Today, I Build a custom DMC POD Plugin using Business Application Studio.
+
+
+08- jan 2024
+
+1)Truncated username is passing from DMC to ECC for change production orders during activity confirmation. 
+So Vignesh is working with ABAP team.
+
+a)Truncated- When a username is truncated, some characters from the end of the username are removed to fit within the specified length constraint.
+
+For example, if a system has a maximum username length of 15 characters, and a user with the username "john_doe_long_username" tries to register,
+ the system might truncate the username to "john_doe_long_u" if only 15 characters are allowed.
+
+q)Change Production- if u add any new operation it will not reflect in DMC if sfc was released against the order
+so we are using change production.
+
+
+b)Ativity Confirmation-
+Activity confirmation" involves recording the time spent on specific tasks.Once this time data is captured, it is then transmitted to the ECC 
+, marking the completion and confirmation of the associated activities."
+
+ When we send labour time to SFC  means  whatever activity you done that time is recorded that confirmation ,
+ we send to ECC then it called Activity confirmation.
+
+Activity confirmation like a time tracking activity
+
+C)SAP ECC stands for SAP ERP Central Component. It is an enterprise resource planning (ERP) software developed by SAP.
+SAP ECC is a comprehensive suite of integrated business applications that enables organizations to manage and streamline various business processes. 
+
+9-Jan
+1)ABAP team fixed username truncated issue, Vignesh is testing it
+ 
+2)Vignesh is working with ERP team and testing the Operation schedule date change BAPI
+
+a)BAPI (Business Application Programming Interface)-Data move to ECC to DMC using BAPI
+10 -Jan-2024
+
+1)ABAP team fixed username truncated issue, Vignesh completed the testing
+2)The Operation schedule date change BAPI testing completed.
+3)Mail Server- Email is not flowing from DM to BH outlook. Vignesh is working with SMTP team
+
+ 
